@@ -6,6 +6,9 @@
     justify-content: space-between;
     background-color: black;
     align-items: center;
+    top: 0;
+    position: sticky;
+
 }
 
 .back {
@@ -20,6 +23,8 @@
     background-color: black;
     width: 700px;
     justify-content: space-between;
+    top: 47px;
+    position: sticky;
 }
 .material-icons {
     color: rgba(255, 255, 255, 1);
@@ -113,6 +118,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 106px;
+    background-color: black;
+
+
 }
 .box7{
   width: 600px;
@@ -120,4 +130,25 @@ p {
   justify-content: space-between;
 
 }
+.first {
+    width: 231px;
+    height: 231px;
+}
+.imglist {
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+    
+}
+.middle > img {
+    width: 20px;
+}
+.celeb {
+width: 30px;
+height: 15px;
+}
 
+.middle {
+    display: flex;
+    align-items: center;
+}
