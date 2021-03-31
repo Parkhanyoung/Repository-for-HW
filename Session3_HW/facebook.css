@@ -1,0 +1,145 @@
+.top-bar {
+  width: 490px;
+  height: 65px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}
+.top {
+  width: 53px;
+}
+.top1 {
+  width: 35px;
+}
+.top1-1 {
+  width: 35px;
+  margin-bottom: 7px;
+}
+.friends {
+  width: 490px;
+  background-color: rgb(243, 241, 241);
+  height: 300px;
+  margin-left: 3px;
+  
+}
+.fri {
+  width: 118px;
+  height: 240px;
+  margin-top: 10px;
+
+}
+.second-box {
+  height: 110px; 
+  width: 490px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  margin-left: 3px;
+ 
+  padding-top: 11px;
+}
+.second-1 {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.chatbox {
+  width:404px;
+  height: 35px;
+  background-color:  rgba(236, 233, 233, 0.959);
+  border-radius: 25px;
+}
+.chatbox > p {
+  margin-top: 7px;
+  color: rgb(158, 156, 156);
+}
+
+hr.solid {
+  border-top: 1px solid rgb(221, 219, 219);
+  width: 454px;
+}
+.second-2 {
+  display: flex;
+
+
+}
+p.sec {
+  margin: 6px;
+}
+.color {
+  margin-top: 3px;
+}
+.blank {
+  width: 490px;
+  height: 22px;
+  background-color: rgb(243, 241, 241);
+}
+.top-first > a {
+  color: white;
+}
+.fakername {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+.fakeimg {
+  margin-top: 8px;
+  margin-left: 4px;
+
+}
+.fakername1 {
+  margin-top: 8px;
+}
+.fafront {
+  display:flex;
+}
+.cry {
+  margin-top: 6px;
+  margin-left: 2px;
+}
+.post1 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  width: 490px;
+  
+}
+.postimg {
+  margin-top: 8px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.menudot {
+  margin-right: 10px;
+}
+.emotionline {
+  width: 490px;
+  display:flex;
+  align-items: center;
+}
+.joa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+}
+.joabox {
+  display: flex;
+  align-items: center;
+
+}
+.centered {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.sorry-for-cheating {
+  width: 490px;
+}
+.passage {
+  margin: 8px;
+  margin-bottom: 4px;
+}
