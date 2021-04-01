@@ -15,28 +15,29 @@
 
 ###########################################################
 # Step1. 리스트 모든 수의 평균을 계산하는 함수 작성하기
-a = int(input("정수를 입력하세요 : "))
-b = int(input("정수를 입력하세요 : "))
+
+
+def pyungyoon(a):
+    if len(a) == 0:
+        return 0
+    else:
+        value = sum(a)/len(a)
+        return value
+
+
 blank = []
-plus = sum(blank)
+while(True):
+    num = int(input("숫자를 입력하세요: "))
+    if num == -1:
+        total_value = pyungyoon(blank)
+        print(total_value)
+        break
+    else:
+        blank.append(num)
 
+        # while uncondition == 0:
+        # pyungyoon(number)
 
-def calculate(a):
-    blank.append(a)
-    plus = sum(blank)
-    divide = plus/len(blank)
-    print(devide)
-    while a != -1:
-        calculate(b)
+        # Step2. 모든 수 입력받고 list에 저장하기
 
-
-calculate(a)
-
-
-# while uncondition == 0:
-# pyungyoon(number)
-
-
-# Step2. 모든 수 입력받고 list에 저장하기
-
-# Step3. 함수 호출하고 결과값 출력하기
+        # Step3. 함수 호출하고 결과값 출력하기
