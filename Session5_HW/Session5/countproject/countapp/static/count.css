@@ -1,0 +1,96 @@
+* {
+	font-family: 'Dela Gothic One', cursive;
+}
+body {
+	background-color: #f2efe4;
+}
+
+h1 {
+	background-color: #81665c;
+	color : #efe6d0;
+	font-weight: lighter;
+	width: 1000px;
+	height: 250px;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+.tit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.welcome{
+	font-size: 85px;
+	font-weight: lighter;
+	color: #53423c;
+	display: flex;
+	justify-content: center;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	background-color: #81665c;
+	color : #efe6d0;
+	font-weight: 100;
+}
+input[type=submit]:hover {
+    padding:5px 15px; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	background-color: #4d3a33;
+	color : #97907d;
+	font-weight: 100;
+}
+hr {
+	height:3px; width:100%; border-color: (44, 25, 19);
+}
+.centerplz {
+	display: flex;
+	justify-content: center;
+}
+
+.just {
+	font-size: 35px;
+	color: #53423c;
+	margin: 3px;
+}
+#textarea {
+	width:1000px;
+	height: 400px;
+	resize: none;
+	color: #3d312c;
+	font-weight: 100px;
+	font-size: 20px;
+}
+.onenter {
+	font-size: 20px;
+	color: #53423c;
+	margin: 0px;
+}
+.rightside{
+	width:1000px;
+	display: flex;
+	justify-content: flex-end;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Result</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+
+</head>
+
+<body>
+	<div class="tit">
+		<h1>Hanyoung's <br>Geulja-Saegi Program</h1>
+	</div>
+
+	<hr><br>
+	<div class=" middle">
+		<div class="flex1">
+			<div class="a">
+				<p class="brown">Number of Characters<br></p>
+				<div class="middle"> {{total_length}}</div>
+			</div>
+			<div class="a">
+				<p class="brown">Excluding blanks</p>
+				<div class="middle"> {{except_blank}}</div>
+			</div>
+			<div class="a">
+				<p class="brown">Number of Words<br></p>
+				<div class="middle">{{word_length}}</div><br>
+			</div>
+		</div>
+
+	</div>
+	<hr><br>
+
+	<div class="b">
+		<p class="brown"> Original Text</p>
+		{{text}}
+	</div>
+
+</body>
+
+
+
+</html>

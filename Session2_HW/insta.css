@@ -1,0 +1,123 @@
+.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.timeline {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.back {
+    margin:5px;
+}
+.front > span {
+    font-size: 55px;
+   
+}
+.nameline {
+    display: flex;
+    background-color: black;
+    width: 700px;
+    justify-content: space-between;
+}
+.material-icons {
+    color: rgba(255, 255, 255, 1);
+    font-size: 45px;
+}
+.middle {
+    display: flex;
+}
+p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 27px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.pig {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.time {
+    background-color: black;
+   
+}
+
+.imageline {
+    background-color: black;
+    width: 700px;
+    display: flex;
+ 
+}
+.lightfont{
+    font-weight: 500;
+    font-size: 22px;
+}
+.letters {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    align-items: center;
+}
+
+.belowil{
+    background-color: black;
+    width: 700px;
+    
+}
+.lee{
+    color:rgb(203, 203, 238);
+    font-weight: lighter
+}
+
+.lowermg {
+    margin: 2px;
+}
+.bbelowil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    display: flex;
+}
+.box1 > p {
+    border: 3px solid rgba(131, 129, 129, 0.288);
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    width:270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.material-icons.down {
+    font-size: 23px;
+}
+
+.box2 {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(131, 129, 129, 0.288);
+    border-radius: 10px;
+
+}
+
+.bbbelowil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box7{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+
+}
+

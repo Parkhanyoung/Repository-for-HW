@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Count</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'count.css' %}">
+</head>
+
+<body>
+	<div class="tit">
+		<h1>Hanyoung's <br>Geulja-Saegi Program</h1>
+	</div>
+	<hr>
+	<div class="welcome">
+		<p>Welcome, Nice to meet you!</p>
+	</div>
+	<hr>
+
+
+	</div>
+	<p class="centerplz just">Just put your text in this box</p>
+	<p class="centerplz onenter">(One 'Enter' is considered as two letters)</p><br>
+
+	<div class="centerplz">
+		<form action="{% url 'result' %}" method="post">{% csrf_token %}
+			<textarea name="text" id="textarea"></textarea>
+			<br>
+			<div class="rightside">
+				<input type="submit" value="submit">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

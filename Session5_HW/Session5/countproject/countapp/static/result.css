@@ -1,0 +1,50 @@
+* {
+	font-family: 'Dela Gothic One', cursive;
+}
+body {
+	background-color: #f2efe4;
+
+
+}
+.tit {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+h1 {
+	background-color: #81665c;
+	color : #efe6d0;
+	font-weight: lighter;
+	width: 1000px;
+	height: 250px;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+.flex1 {
+	display: flex;
+	justify-content: space-between;
+	width:1200px;
+
+}
+.secondline {
+	width: 300px;
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+
+	
+}
+hr {
+	height:3px; width:100%; border-color: (44, 25, 19);
+}
+.b {
+	margin-left: 236px;
+}
+.brown {
+	color: #53423c;
+}
