@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+</head>
+
+<body>
+	<h1>게시판</h1>
+	<ul>
+		<li><a href="{% url 'drama' %}">Dramas [게시글 수:{{dramas.count}}] </a><br></li>
+		<li><a href="{% url 'movie' %}">Movies [게시글 수: {{movies.count}}]</a><br></li>
+		<li><a href="{% url 'programming' %}">Programmings [게시글 수: {{programmings.count}}]</a><br></li>
+	</ul>
+
+	<a href="{% url 'new' %}"> 글 쓰러 가기</a>
+</body>
+
+</html>
