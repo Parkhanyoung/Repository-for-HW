@@ -9,14 +9,18 @@
 </head>
 
 <body>
-    <h2>제목: {{ plan.title }}</h2>
     <div>
-        <p>{{ plan.content }}</p>
+        <h2>일정명: {{ todo.title }}</h2>
     </div>
+    <div>
+        <p>일정내용: {{ todo.content }}</p>
+    </div>
+    <div>
+        <p>due date: {{ todo.date }}</p>
+    </div>
+    <a href="{% url 'edit' todo.pk %}">수정하기</a>
+    <a href="{% url 'delete' todo.pk %}">삭제하기</a>
     <a href="{% url 'home' %}">홈으로</a>
-    <a href="{% url 'edit' plan.pk %}">수정하기</a>
-    <a href="{% url 'delete' plan.pk %}">삭제하기</a>
-
 </body>
 
 </html>
