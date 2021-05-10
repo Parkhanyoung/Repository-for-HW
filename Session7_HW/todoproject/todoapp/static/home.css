@@ -1,0 +1,44 @@
+* {
+    font-family: 'Pangolin', cursive;
+}
+h1 {
+    background-color: rgb(49, 31, 9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+body {
+    width : 800px;
+    
+}
+a {
+    text-decoration-line: none;
+    color:black;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 32, 14);
+    height:300px;
+    color:white;
+}
+.title {
+    color: white;
+}
+.button {
+    width:100px;
+    background-color: #3008a0;
+    border: none;
+    color:rgb(235, 184, 14);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+
+}

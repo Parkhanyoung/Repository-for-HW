@@ -2,28 +2,34 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:ital,wght@1,200&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'new.css' %}">
 </head>
 
 <body>
     <form action="" method="POST">
         {% csrf_token %}
         <div>
-            <label for="title">일정: </label>
+            <label for="title">Name: </label>
             <input type="text" id="title" name="title" placeholder="일정의 이름을 입력해주세요." />
         </div>
         <div>
-            <label for="content">내용 </label><br>
-            <textarea id="content" name="content" cols=15 rows="10" placeholder="일정의 내용을 입력해주세요."></textarea>
+            <label for="content">Content </label><br>
+            <textarea id="content" name="content" cols="50" rows="20" placeholder="일정의 내용을 입력해주세요."></textarea>
         </div>
         <div>
             <input type="datetime-local" name="date" id="date" />
+            <button type="submit">Save</button>
         </div>
-        <button type="submit">저장하기</button>
-        <a href="{% url 'home' %}">홈으로</a>
+
+        <a href="{% url 'home' %}">Home</a>
     </form>
 </body>
 

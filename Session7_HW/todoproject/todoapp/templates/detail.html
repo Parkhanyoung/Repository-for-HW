@@ -2,25 +2,30 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:ital,wght@1,200&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'detail.css' %}">
 </head>
 
 <body>
     <div>
-        <h2>일정명: {{ todo.title }}</h2>
+        <h2>Name: {{ todo.title }}</h2>
     </div>
-    <div>
-        <p>일정내용: {{ todo.content }}</p>
+    <div class="body">
+        <p>{{ todo.content }}</p>
     </div>
-    <div>
-        <p>due date: {{ todo.date }}</p>
+    <div class="due">due date!!! {{ todo.date }}
     </div>
-    <a href="{% url 'edit' todo.pk %}">수정하기</a>
-    <a href="{% url 'delete' todo.pk %}">삭제하기</a>
-    <a href="{% url 'home' %}">홈으로</a>
+
+    <a href="{% url 'edit' todo.pk %}" class="button">수정하기</a>
+    <a href="{% url 'delete' todo.pk %}" class="button">삭제하기</a>
+    <a href="{% url 'home' %}" class="button">홈으로</a>
 </body>
 
 </html>
