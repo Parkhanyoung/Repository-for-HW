@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">  
+    {% load static %} 
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block css %}
+
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박한영의 TODO 사이트</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="front">
+            <a href="{% url 'home' %}">홈</a>&nbsp;|
+            <a href="{% url 'new' %}">일정추가</a>
+        </div>
+        <div class="back">
+            불 태워보자!
+        </div>
+    </div>
+    <div class="center">
+    <div class="main_title">
+        <h1>
+            {% block title %}
+            {% endblock %}
+        </h1>
+    </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock content %}
+    
+</body>
+
+</html>
