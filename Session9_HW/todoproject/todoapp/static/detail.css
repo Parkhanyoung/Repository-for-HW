@@ -1,0 +1,45 @@
+.jangjak {
+        background-color: rgb(207, 186, 169);
+        border: 5px solid rgb(114, 48, 12);
+        border-radius: 9px;
+        font-weight: bold;
+        width: 300px;
+        margin: 0px;
+}
+
+.center_detail {
+        display: flex;
+        flex-direction: column;
+}
+
+ul {
+        padding-inline-start: 0mm;
+}
+
+.detail_body {
+        border: 10px inset #fd9952;
+        width: 500px;
+        padding: 10px;
+        
+}
+
+.due {
+        font-size: small;
+        display: flex;
+        justify-content: flex-end;
+}
+
+.left {
+        width: 500px;
+}
+.left1 {
+        width: 600px;
+}
+
+.flex {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 5px;
+}

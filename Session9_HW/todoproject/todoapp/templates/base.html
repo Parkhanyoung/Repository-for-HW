@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    {% load static %}
+    {% load socialaccount %}
+    {% providers_media_js %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+ 
+    {% block css %}
+
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박한영의 TODO 사이트</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="front">
+            <a href="{% url 'home' %}">홈</a>
+            {% if user.is_authenticated %}
+            |&nbsp;<a href="{% url 'new' %}">일정추가</a>
+            {% endif %}
+        </div>
+        <div class="back">
+            {% if user.is_authenticated %}
+            <p>환영합니다 <a href="{% url 'mypage' user.pk %}">{{ user.username }}님</a></p>|
+
+            <a href="{% url 'logout' %}">로그아웃</a>
+            {% else %}
+            <a href="{% provider_login_url 'kakao' %}">카카오 로그인</a>&nbsp;|
+            <a href="{% url 'login' %}">로그인</a>&nbsp;|
+            <a href="{% url 'signup' %}">회원가입</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="center">
+        <div class="main_title">
+            <h1>
+                {% block title %}
+                {% endblock %}
+            </h1>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+
+</html>

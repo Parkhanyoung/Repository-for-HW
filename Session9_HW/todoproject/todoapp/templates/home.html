@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+
+{% block title %}
+홈
+{% endblock %}
+{% block content %}
+<div class="body">
+    <div class="center">
+        <ul style="list-style: none;">
+            {% for todo in todos %}
+
+            <li>
+                <div class="list">
+                    <a href="{% url 'detail' todo.pk %}" class="title">
+                        <div style="display: flex; justify-content: center;">{{ todo.title }} </div>[작성자: {{ todo.author.username }} | 남은 시간:{{ todo.date|timeuntil }}]
+                    </a>
+                </div>
+            </li>
+
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="from_back">
+    <div class="match_head"></div>
+    <a href="{% url 'new' %}" class="match_body">새 글 작성</a>
+</div>
+{% endblock %}
+
+
+</html>
