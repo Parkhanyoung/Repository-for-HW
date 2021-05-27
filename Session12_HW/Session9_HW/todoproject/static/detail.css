@@ -1,0 +1,11 @@
+* {
+    font-family: 'Pangolin', cursive;
+}
+body {
+    width : 800px;
+}
+
+.active {
+    display: block;
+}
+

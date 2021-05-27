@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'edit.css' %}">
+{% endblock %}
+
+{% block title %}
+수정
+{% endblock %}
+
+{% block content %}
+<div class="center">
+    <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div>
+                <br>
+                <label for="title">Name: </label>
+                <input type="text" id="title" name="title" value="{{ todo.title }}" />
+            </div>
+            <br>
+            <div>
+                <label for="content">Content </label>
+                <br>
+                <textarea id="content" name="content" cols=50 rows="20">{{ todo.content }}</textarea>
+            </div>
+            <div>
+                <input type="datetime-local" name="date" id="date" value="{{ todo.date }}" />
+                <button type="submit">수정하기</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+</html>

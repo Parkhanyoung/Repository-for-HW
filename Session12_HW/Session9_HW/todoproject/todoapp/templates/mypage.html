@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ user.username }}님의 활동
+{% endblock %}
+{% block content %}
+<div class="center">
+    <div>
+        <h1>내 할일</h1>
+        <ul>
+            {% for todo in todos %}
+            <li>
+                <a href="{% url 'detail' todo.pk %}">{{ todo.title }} [남은 시간:{{ todo.date|timeuntil }}]</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <h1>내 댓글</h1>
+        <ul>
+            {% for comment in comments %}
+            <li>
+                <a href="{% url 'detail' comment.todo.pk %}">{{ comment.content }}</a>
+                {% endfor %}
+            </li>
+            {% endblock content %}
+        </ul>
+    </div>
+</div>
