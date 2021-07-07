@@ -1,0 +1,30 @@
+.list {
+    background-color: rgb(207, 186, 169);
+    border: 4px solid rgb(95, 40, 11);
+    border-radius: 9px;
+    font-weight: bold;
+    margin: 1px;
+    font-size: 20px;
+}
+ul {
+    padding-inline-start: 0mm;
+    margin: 0px;
+}
+.from_back {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.match_head {
+    width: 20px;
+    background-color: crimson;
+    border-radius: 7px;
+}
+
+.match_body {
+    width: 100px;
+    background-color: rgb(247, 215, 185);
+    border: 1px solid rgb(226, 179, 140);
+    border-radius: 3px;
+}
+

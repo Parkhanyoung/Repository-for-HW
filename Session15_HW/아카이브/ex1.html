@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Awesome</title>
+</head>
+
+<body>
+    <div id="myDIV" class="header">
+        <h2>Awesome To Do List</h2>
+        <div class="inputBox">
+            <input type="text" id="myInput" placeholder="Title...">
+            <button onclick="newElement()" class="addBtn">Add</button>
+            <button id="darkMode" onclick="darkMode()">다크</button>
+        </div>
+    </div>
+    <button id="toggleBtn" onclick="toggle()">숨기기</button>
+    <ul id="myUL">
+        <li>
+            <span>Happy Coding :)</span>
+            <span class="close">&#215;</span>
+        </li>
+    </ul>
+    <div id="myProgress">
+        <div id="myBar">10%</div>
+      </div>
+      <button onclick="move()">run!</button>
+</body>
+<script src="ex1.js">
+</script>
+
+</html>
