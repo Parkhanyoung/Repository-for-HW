@@ -32,7 +32,7 @@ const input = document.querySelector('#city')
 const button = document.querySelector('#submit')
 const weatherBox = document.querySelector('#weatherBox')
 
-const API_KEY = 'efef11e4c4f07f87c838d68c6b1f70de'
+const API_KEY = ''
 
 button.addEventListener('click', async () => {
   try {
