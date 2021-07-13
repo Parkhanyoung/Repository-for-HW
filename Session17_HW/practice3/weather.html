@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./weather.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>박한영의 날씨 정보 제공 사이트</h2>
+
+  <div class="flex_container">
+    <input type="text" name="city" id="city" placeholder="도시명을 영어로 입력해주세요">
+    <button id="submit">검색</button>
+  </div>
+<br>
+  <div id="weatherBox"></div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./weather.js"></script>
+
+</body>
+
+</html>
